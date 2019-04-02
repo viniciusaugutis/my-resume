@@ -12,6 +12,7 @@ function invertTheme() {
 window.onload = function () {
     getEducation();
     getExperience();
+    getSkills();
 };
 
 function getEducation() {
@@ -78,5 +79,33 @@ function updateExperience(data) {
     })
 
     experience.innerHTML = list.join('')
+}
+
+
+function getSkills() {
+    fetch('http://demo9495980.mockable.io/skills').then(response => {
+        return response.json()
+    })
+        .then(data => {
+            updateSkills(data)
+        });
+}
+
+function updateSkills(data) {
+    var skill = document.getElementById("skill-list")
+    var list = data.company.map((e) => {
+        var html =
+            `<div class="CV-timeline CV-experience-group">
+                    <h3 class="CV-timeline-heading">
+                        <span class="CV-timeline-heading-title">${e.nome}</span><small
+                            class="CV-timeline-heading-duration">${e.nivel}
+                           </small>
+                    </h3>
+                </div>`
+
+        return html
+    })
+
+    skill.innerHTML = list.join('')
 }
 
