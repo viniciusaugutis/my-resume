@@ -42,7 +42,7 @@
 }
 
 #about .container-about {
-  padding: 20px;
+  padding: 10px;
   background-color: aliceblue;
   color: #000000;
   border-radius: 10px;
@@ -53,6 +53,7 @@
   margin: 0 auto;
   border-radius: 50%;
 }
+
 #about .about-name {
   text-align: center;
   margin-top: 10px;
@@ -84,4 +85,121 @@
   width: 80px;
   display: inline-block;
   font-weight: bold;
+}
+
+#education {
+  padding: 0 80px;
+}
+.CV-primaryHeading {
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+.CV-primaryHeading-name {
+  display: block;
+  margin-bottom: 0.1em;
+  font-size: 26px;
+  line-height: 0.9;
+}
+.CV-primaryHeading-position {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  color: #00aef0;
+  font-style: italic;
+}
+.CV-secondaryHeading {
+  position: relative;
+  margin: 2em 0 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.CV-secondaryHeading:before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin: 0 0.5em 0 -0.2em;
+  border: 2px solid #00aef0;
+  border-left: none;
+  border-bottom: none;
+  -webkit-transform: scaleX(0.75) rotate(45deg);
+          transform: scaleX(0.75) rotate(45deg);
+}
+.CV-tertiaryHeading {
+  margin-top: 0;
+  line-height: 1;
+  color: #00aef0;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.CV-timeline {
+  position: relative;
+  margin: 0 0 0 0.5em;
+  padding-left: 1.5em;
+  border-left: solid 1px #222;
+}
+.CV-timeline:first-of-type {
+  margin-top: 1em;
+}
+.CV-timeline:last-of-type {
+  border-left-color: transparent;
+}
+.CV-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: solid 1px #222;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+.CV-timeline-heading {
+  margin: 0;
+  padding-bottom: 0.5em;
+  line-height: 1em;
+  font-weight: normal;
+  -webkit-transform: translateY(-0.1em);
+          transform: translateY(-0.1em);
+}
+.CV-timeline-heading-title {
+  line-height: 1;
+  color: #00aef0;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.CV-timeline-heading-location {
+  font-size: 20px;
+}
+.CV-timeline-heading-duration {
+  display: block;
+  font-size: 20px;
+  color: #6f6f6f;
+}
+.CV-timeline-details {
+  display: block;
+  margin: 0;
+  padding-bottom: 2em;
+  padding: 0 0 2em 1em;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQIW2NkYGD4D8TIgJERTQDMpVAQAGaUAQbko3DsAAAAAElFTkSuQmCC");
+}
+.CV-timeline-details-item {
+  margin-bottom: 0.5em;
+}
+
+#experience {
+  padding: 0 80px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.mb--15 {
+  margin-bottom: -15px;
 }
