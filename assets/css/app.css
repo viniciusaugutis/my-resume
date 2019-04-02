@@ -173,6 +173,15 @@
   text-transform: uppercase;
   font-size: 20px;
 }
+
+.CV-timeline-heading-sub-title {
+  line-height: 1;
+  color: #00aef0;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .CV-timeline-heading-location {
   font-size: 20px;
 }
@@ -200,10 +209,21 @@
   padding: 0 80px;
 }
 
+#languages {
+  padding: 0 80px;
+}
+
+
 .fs-14 {
   font-size: 14px;
 }
 
 .mb--15 {
   margin-bottom: -15px;
+}
+
+@media only screen and (max-width: 767px) {
+  #about .container-about {
+    padding: 30px;
+  }
 }
